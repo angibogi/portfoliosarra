@@ -4,9 +4,9 @@ import Icona1 from "../../assets/skillset_01.svg"
 import Icona2 from "../../assets/skillset_02.svg"
 import Icona3 from "../../assets/skillset_03.svg"
 
-const Services = () => {
+const Skillset = () => {
     return (
-        <div className="w-full lg:px-[150px] px-[30px] pt-20 h-full flex lg:flex-row flex-col justify-between items-start gap-[100px] my-20">
+        <div id="skillset" className="w-full lg:px-[150px] px-[30px] pt-20 h-full flex lg:flex-row flex-col justify-between items-start gap-[100px] my-20">
             <div className="lg:w-[40%] w-full flex flex-col justify-center items-start gap-6">
                 <h3 className="text-[38px] font-bold  text-white mb-2">Skillset</h3>
                 <p className="text-[#8491A0] text-[18px]">With skills in over 4 different fields of design,
@@ -63,4 +63,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default Skillset

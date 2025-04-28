@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 export const Project = () => {
     return (
-        <div className=" pt-20 lg:px-[150px] px-[30px] grid lg:grid-cols-2 grid-cols-1  gap-4 bg-black z-10">
+        <div id="project" className=" pt-20 lg:px-[150px] px-[30px] grid lg:grid-cols-2 grid-cols-1  gap-4 bg-black z-10">
             <div className=" w-full flex flex-col items-start gap-6">
                 <p className="text-[#8491A0] text-[16px]">MY PROJECTS</p>
                 <h1 className="text-white font-semibold xl:text-[55px] text-[28px]">Work that I’ve done </h1>

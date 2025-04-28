@@ -20,16 +20,18 @@ const [isMenuOpen, setIsMenuOpen] = useState (false)
 
         <div className="xl:flex hidden items-center space-x-5 z-10 ">
           <ul className="flex items-center space-x-8">
-            <Link to="/">Experience</Link>
-            <Link to="/makai">Skillset</Link>
-            <Link to="/valentino">Projects</Link>
+            <Link to="/#experience">
+                Experience</Link>
+            <Link to="/#skillset">Skillset</Link>
+            <Link to="/#project">Projects</Link>
           </ul>
         </div>
       </div>
-      <div className=" hidden lg:block bg-[#659238] hover:bg-black z-10  absolute top-0 right-10">
-      <Link to="/">  <button className="px-5 py-2 bg-[#659238] hover:bg-black mt-6 hover:text-white cursor-pointer"> Contact</button> </Link>
+      <Link to="/#contact">  <div className=" group hidden lg:block bg-[#659238] hover:bg-black z-10  absolute top-0 right-10">
+     <button className="px-5 py-2 bg-[#659238] group-hover:bg-black mt-6 group-hover:text-white cursor-pointer"> Contact</button> 
       </div>
       <div className="relative hidden md:flex items-center justify-center gap-3"></div>
+       </Link>
     
     <i className="bx bx-menu xl:hidden block text-5xl cursor pointer z-10" onClick={() => setIsMenuOpen (!isMenuOpen)}></i>
 <div className={'absolute xl:hidden top-24 left-0 w-full bg-black flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${isMenuOpen ? "opacity-100" : "opacity-0"} '}

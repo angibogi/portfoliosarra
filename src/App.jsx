@@ -1,5 +1,6 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
+import { Makai } from "./Pages/Makai";
 import { Valentino } from "./pages/Valentino";
 import { Cortilia } from "./pages/Cortilia";
 import { CortiliaPage } from "./pages/CortiliaPage";
@@ -7,7 +8,6 @@ import Navbar from "./sections/Navbar";
 import Footer from "./sections/Footer";
 import ScrollToTop from "./ScrollToTop"; 
 import ScrollToAnchor from "./ScrollToAnchor";
-import { Makai } from "./Pages/Makai";
 
 const App = () => {
   return (

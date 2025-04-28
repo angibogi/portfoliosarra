@@ -2,45 +2,67 @@ import React, { useState } from 'react'
 import Logo from "../../assets/logo.svg"
 import { Link } from "react-router-dom"
 import Negativo from "../../assets/logo_negativo.svg"
-import 'boxicons'
 
 const Navbar = () => {
 
-const [isMenuOpen, setIsMenuOpen] = useState (false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
 
   return (
     <div>
       <div className="flex justify-between items-center py-4 lg:px-[150px]">
-      <div className="hidden lg:block">
-        <Link to="/"><img src={Logo} alt="Sarra" /></Link>
+        <div className="hidden lg:block">
+          <Link to="/"><img src={Logo} alt="Sarra" /></Link>
         </div>
         <div className="lg:hidden block px-10 z-10">
-        <Link to="/"><img src={Negativo} alt="Sarra" /></Link>
+          <Link to="/"><img src={Negativo} alt="Sarra" /></Link>
         </div>
 
-        <div className="xl:flex hidden items-center space-x-5 z-10 ">
-          <ul className="flex items-center space-x-8">
+        <div className=" items-center space-x-5 z-10  ">
+          <div className=" items-center space-x-8 hidden lg:flex">
             <Link to="/#experience">
-                Experience</Link>
+              Experience</Link>
             <Link to="/#skillset">Skillset</Link>
             <Link to="/#project">Projects</Link>
-          </ul>
+          </div>
+          <button onClick={() => (setIsMenuOpen(!isMenuOpen))} type="button" className="flex lg:hidden p-5 z-10 ">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+  </button>
         </div>
+        
       </div>
-      <Link to="/#contact">  <div className=" group hidden lg:block bg-[#659238] hover:bg-black z-10  absolute top-0 right-10">
-     <button className="px-5 py-2 bg-[#659238] group-hover:bg-black mt-6 group-hover:text-white cursor-pointer"> Contact</button> 
+      <Link to="/#contact">  <div className=" group hidden lg:block bg-[#659238] hover:bg-black z-10  absolute top-0 right-8">
+        <button className="px-5 py-2 bg-[#659238] group-hover:bg-black mt-6 group-hover:text-white cursor-pointer"> Contact</button>
       </div>
-      <div className="relative hidden md:flex items-center justify-center gap-3"></div>
-       </Link>
-    
-    <i className="bx bx-menu xl:hidden block text-5xl cursor pointer z-10" onClick={() => setIsMenuOpen (!isMenuOpen)}></i>
-<div className={'absolute xl:hidden top-24 left-0 w-full bg-black flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${isMenuOpen ? "opacity-100" : "opacity-0"} '}
-style={{transition: "transform 0.3s ease, opacity 0.3s ease"}}
->
+        <div className="relative hidden md:flex items-center justify-center gap-3"></div>
+      </Link>
 
-  
+      <div className=" lg:hidden flex z-10 border border-amber-400 float-right">
+
 </div>
+{
+  isMenuOpen && (
+    <div className=" absolute top-0 w-full h-full z-50 bg-black">
+
+<button onClick={() => (setIsMenuOpen(!isMenuOpen))} type="button" className=" text-white p-5 pt-10 z-10 float-right ">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+</svg>
+      </button>
+            <div className=" flex flex-col text-white text-2xl text-center mt-50 space-y-5">
+            <button onClick={() => (setIsMenuOpen(!isMenuOpen))}><Link to="/#experience">Experience</Link></button>
+              <button onClick={() => (setIsMenuOpen(!isMenuOpen))}> <Link to="/#skillset">Skillset</Link></button>
+              <button onClick={() => (setIsMenuOpen(!isMenuOpen))}><Link to="/#project">Projects</Link></button>
+              <button onClick={() => (setIsMenuOpen(!isMenuOpen))}><Link to="/#contact">Contact</Link></button>
+          </div>
     </div>
+  )
+}
+
+    </div>
+
   )
 }
 

@@ -21,7 +21,7 @@ export function Valentino() {
         imgAlt="foto profilo">
         <div className="md:space-y-10 space-y-4 ">
           <h1 className="text-2xl md:text-6xl font-bold"> Valentino – </h1>
-          <h1 className="text-2xl md:text-6xl font-bold">Website Checkout </h1>
+          <h1 className="text-2xl md:text-6xl font-bold ">Website Checkout </h1>
           <h1 className="text-2xl md:text-6xl font-bold">Redesign </h1>
           <p>
             I redesigned the website checkout flow to improve usability and align with Valentino’s luxury brand identity.
@@ -30,7 +30,7 @@ export function Valentino() {
           </p>
         </div>
       </Hero>
-      <img className="lg:px-[130px] px-[0]" src={Section} alt="valentino" />
+      <img className="w-full" src={Section} alt="valentino" />
       <div className="lg:px-[150px] px-[30px] h-[760px] bg-[#323232]  content-center">
         <div className="lg:px-20 px-5 space-y-10 " >
           <div>
@@ -43,7 +43,7 @@ export function Valentino() {
           </div>
         </div>
       </div>
-      <img className="lg:px-[150px] px-[0]" src={Mobile} alt="valentino" />
+      <img className="w-full" src={Mobile} alt="valentino" />
 
       <div className="lg:px-[150px] px-[30px] h-[760px] bg-[#323232]  content-center">
         <div className="lg:px-20 px-5space-y-10 " >
@@ -54,7 +54,7 @@ export function Valentino() {
         </div>
       </div>
 
-      <div className="bg-[#323232] grid lg:grid-cols-4 grid-cols-1 gap-4">
+      <div className="bg-[#323232] grid lg:grid-cols-4 grid-cols-1 gap-4 px-20 lg:p-0">
         <div className="lg:col-start-1 ">
           <img className="lg:pt-20 pt-0" src={Design00} alt="" />
         </div>
@@ -110,7 +110,7 @@ export function Valentino() {
           </div>
         </div>
       </div>
-      <img className="lg:px-[150px] px-[0px]" src={Notebook} alt="valentino" />
+      <img className="w-full" src={Notebook} alt="valentino" />
     </>
   )
 }

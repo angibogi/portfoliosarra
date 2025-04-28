@@ -12,9 +12,8 @@ export function Home() {
         imgUrl={Sarra}
         imgAlt="foto profilo">
         <div className="md:space-y-10 space-y-4 ">
-          <h1 className="text-2xl md:text-6xl font-bold">I’m Sarra Slimane.</h1>
-          <h1 className="text-2xl md:text-6xl font-bold">A UI UX designer</h1>
-          <h1 className="text-2xl md:text-6xl font-bold opacity-50">based in Italy.</h1>
+          <h1 className="text-2xl xl:text-6xl font-bold leading-10 xl:leading-20">I’m Sarra Slimane. <br/> A UI UX designer <br />
+          <span className="text-2xl xl:text-6xl font-bold leading-10 xl:leading-20 opacity-50">based in Italy.</span> </h1>
           <p> I design intuitive, user-focused digital experiences that blend functionality with visual elegance.
             My background in fashion and love for contemporary art influence my approach to design — always aiming to
             create interfaces that are not only usable, but also emotionally engaging and visually compelling.

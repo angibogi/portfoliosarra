@@ -1,6 +1,6 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { Makai } from "./Pages/Makai";
+import { Makai } from "./pages/Makai";
 import { Valentino } from "./pages/Valentino";
 import { Cortilia } from "./pages/Cortilia";
 import { CortiliaPage } from "./pages/CortiliaPage";

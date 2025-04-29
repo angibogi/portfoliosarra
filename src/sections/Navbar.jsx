@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import Logo from "../../assets/logo.svg"
 import { Link } from "react-router-dom"
 import Negativo from "../../assets/logo_negativo.svg"
+import Dropdown from "../Dropdown";
 
 const Navbar = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   const [isOpen, setIsOpen] = useState(false);
 
 
   return (
@@ -23,7 +25,7 @@ const Navbar = () => {
             <Link to="/#experience">
               Experience</Link>
             <Link to="/#skillset">Skillset</Link>
-            <Link to="/#project">Projects</Link>
+            <button><Dropdown/></button>
           </div>
           <button onClick={() => (setIsMenuOpen(!isMenuOpen))} type="button" className="flex lg:hidden p-5 z-10 ">
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -54,12 +56,30 @@ const Navbar = () => {
             <div className=" flex flex-col text-white text-2xl text-center mt-50 space-y-5">
             <button onClick={() => (setIsMenuOpen(!isMenuOpen))}><Link to="/#experience">Experience</Link></button>
               <button onClick={() => (setIsMenuOpen(!isMenuOpen))}> <Link to="/#skillset">Skillset</Link></button>
-              <button onClick={() => (setIsMenuOpen(!isMenuOpen))}><Link to="/#project">Projects</Link></button>
+              <button onClick={() => setIsOpen((prev) => !prev)} className=" duration-200 cursor-pointer items-center justify-center w-full">
+              Project
+               </button>
+               { isOpen && (
+            <div className=" text-white text-xl text-center flex flex-col space-y-5  ">
+<button className="block px-4 py-2 hover:text-white">
+  <Link to="/makai">VLTN - Checkout</Link></button>
+<button className=" text-white">
+  <Link to="/cortilia">Cortilia - New app</Link></button>
+<button className="block px-4 py-2 text-white">
+  <Link to="/valentino">Cortilia - PDP</Link></button>
+  <button className="block px-4 py-2 text-white">
+  <Link to="/page">Macai - ETA</Link></button>
+</div>
+
+)}
               <button onClick={() => (setIsMenuOpen(!isMenuOpen))}><Link to="/#contact">Contact</Link></button>
           </div>
+          
     </div>
   )
 }
+
+
 
     </div>
 

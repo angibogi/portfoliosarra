@@ -25,7 +25,7 @@ export const Project = () => {
                     </div>
                     <div className="relative">
                         <span className="bg-[#659238] px-5 py-3 text-xl  text-white absolute bottom-0 right-0 ">
-                            ↗
+                        ↗
                         </span>
                     </div>
                 </div>

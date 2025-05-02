@@ -158,26 +158,26 @@ export function Cortilia() {
                 </div>
             </div>
             <h3 className="text-[#E6FFF7] font-semibold text-[22px] font-[Poppins] mt-20"> User test: Risultati</h3>
-            <div className=" grid lg:grid-cols-2 gap-12">
-            <div className="bg-white border rounded p-10 h-[216px] mt-5 ">
+            <div>
+            <div className="bg-white border rounded p-10 mt-5 ">
               <h4 className="font-extrabold">Coachmark:</h4>
               <p>In generale i coachmark hanno aiutato l’utente a comprendere le modifiche e orientarsi all’interno dell’app riducendo i missclick.</p>
             </div>
-            <img src={User00} alt="" />
+            <img className="mt-10" src={User00} alt="" />
             </div>
 
-            <h3 className="text-[#E6FFF7] font-semibold text-[22px] font-[Poppins] mt-20 text-end "> User test: Risultati</h3>
-            <div className=" grid lg:grid-cols-2 gap-12">
-            <img src={User01} alt="" />
-            <div className="bg-white border rounded p-10 h-[269px] mt-5 ">
+            <h3 className="text-[#E6FFF7] font-semibold text-[22px] font-[Poppins] mt-20 "> User test: Risultati</h3>
+            <div>
+            <div className="bg-white border rounded p-10 mt-5 ">
               <h4 className="font-extrabold">Esplora:</h4>
               <p>l’a/b test sulle 2 versioni di Esplora vede vincitrice la versione “telecomando” che ha riscontrato maggior successo rispetto alla versione in “lista”: gli utenti hanno individuato con maggior facilità e velocità la categoria richiesta nel task.</p>
             </div>
+            <img className="mt-10 " src={User01} alt="" />
             </div>
 
             <h3 className="text-[#E6FFF7] font-semibold text-[22px] font-[Poppins] mt-20"> User test: Risultati</h3>
             <div>
-            <div className="bg-white border rounded p-10 h-[177px] mt-5 w-1/2 ">
+            <div className="bg-white border rounded p-10 h-[177px] mt-5 ">
               <h4 className="font-extrabold">Carrello:</h4>
               <p>SVUOTA risulta essere poco visibile e logicamente scollegato allo scontrino → redesign ✔️</p>
             </div>

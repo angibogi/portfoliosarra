@@ -34,8 +34,8 @@ export function CortiliaPage() {
             <h2 className="font-[Krona One] font-light text-[16px] mb-5  text-white">01</h2>
             <div className="lg:h-[1200px] h-[500px] w-[2px] bg-white "></div>
           </div>
-          <div className="p-20">
-            <h3 className=" text-white font-base lg:text-[26px] text-[20px] font-[Krona One] leading-[190.5%]  "> MOBILE_FIRST STRATEGY</h3>
+          <div className="md:p-20 p-5">
+            <h3 className=" text-white font-base lg:text-[26px] text-[16px] font-[Krona One] leading-[190.5%]  "> MOBILE_FIRST STRATEGY</h3>
             <p className="text-white md:text-[14px] text-[12px] mb-2 font-[Krona One]">
               Approached the redesign starting from mobile, ensuring a seamless and optimized <br />
               experience on smaller screens before scaling up to desktop.</p>
@@ -44,8 +44,8 @@ export function CortiliaPage() {
         </div>
 
         <div className="flex items-center justify-between">
-          <div className="p-20">
-            <h3 className=" text-white font-base lg:text-[26px] text-[20px] font-[Krona One] leading-[190.5%]"> PRODUCT-CENTERED LAYOUT</h3>
+          <div className="md:p-20 p-5">
+            <h3 className=" text-white font-base lg:text-[26px] text-[16px] font-[Krona One] leading-[190.5%]"> PRODUCT-CENTERED LAYOUT</h3>
             <p className="text-white md:text-[14px] text-[12px] mb-2 font-[Krona One]">
               Prioritized the product image and key information at the top of the page to immediately <br />
               capture user attention and support purchase intent.</p>
@@ -62,8 +62,8 @@ export function CortiliaPage() {
             <h2 className="font-[Krona One] font-light text-[16px] mb-5  text-white">03</h2>
             <div className="lg:h-[1200px] h-[500px] w-[2px] bg-white "></div>
           </div>
-          <div className="p-20">
-            <h3 className=" text-white font-base lg:text-[26px] text-[20px] font-[Krona One] leading-[190.5%]"> STICKY ADD-TO_CART ON SCROLL:</h3>
+          <div className="md:p-20 p-5">
+            <h3 className=" text-white font-base lg:text-[26px] text-[16px] font-[Krona One] leading-[190.5%]"> STICKY ADD-TO_CART ON SCROLL:</h3>
             <p className="text-white md:text-[14px] text-[12px] mb-2 font-[Krona One]">
               Introduced a sticky “Add to Cart” button that remains visible while scrolling to increase <br />
               accessibility and reduce friction in the purchase flow.</p>
@@ -73,8 +73,8 @@ export function CortiliaPage() {
 
 
         <div className="flex items-center justify-between">
-          <div className="p-20">
-            <h3 className=" text-white font-base lg:text-[26px] text-[20px] font-[Krona One] leading-[190.5%]"> FLEXIBLE MULTI-PLATFORM DESIGN:</h3>
+          <div className="md:p-20 p-5">
+            <h3 className=" text-white font-base lg:text-[26px] text-[16px] font-[Krona One] leading-[190.5%]"> FLEXIBLE MULTI-PLATFORM DESIGN:</h3>
             <p className="text-white md:text-[14px] text-[12px] mb-2 font-[Krona One]">
               Created a responsive layout adaptable across multiple touchpoints — app and website <br />
               — maintaining design consistency and usability.</p>
@@ -92,8 +92,8 @@ export function CortiliaPage() {
             <h2 className="font-[Krona One] font-light text-[16px] mb-5  text-white">05</h2>
             <div className="lg:h-[1200px] h-[500px] w-[2px] bg-white "></div>
           </div>
-          <div className="p-20">
-            <h3 className=" text-white font-base lg:text-[26px] text-[20px] font-[Krona One] leading-[190.5%]"> STICKY ADD-TO_CART ON SCROLL:</h3>
+          <div className="md:p-20 p-5">
+            <h3 className=" text-white font-base lg:text-[26px] text-[16px] font-[Krona One] leading-[190.5%]"> STICKY ADD-TO_CART ON SCROLL:</h3>
             <p className="text-white md:text-[14px] text-[12px] mb-2 font-[Krona One]">
               Followed a full UX methodology: user research, wireframing, low- to high-fidelity <br />
               prototyping, and usability testing to ensure the new design met user needs and <br /> business goals.</p>

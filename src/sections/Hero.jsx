@@ -8,7 +8,7 @@ const hero = ({ imgUrl, imgAlt, children }) => {
         <div className="z-10">
           <img  src={imgUrl} alt={imgAlt} />
         </div>
-        <div className="md:w-1/2 p-5 flex flex-col justify between z-10">
+        <div className="md:w-1/2 p-5 flex flex-col justify between z-5">
           {children}
         </div>
 

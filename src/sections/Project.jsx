@@ -31,7 +31,7 @@ export const Project = () => {
                 </div>
                 </Link>
             </div>
-            <div className="relative">
+            <div className="relative ">
                   <Link to="/valentino">
                 <div className="overflow-hidden bg-white-100 ">
                     <img className="w-full" src={valentino} alt="Sarra" />
@@ -51,7 +51,7 @@ export const Project = () => {
             </div>
             <div className=" relative">
             <Link to="/makai">
-                <div className="overflow-hidden bg-white-100 xl:mt-20 mt-0 xl:absolute relative xl:top-140">
+                <div className="overflow-hidden bg-white-100 lg:mt-20 md:mt-10 mt-0 relative  xl:top-100 lg:top-35 ">
                     <img className="w-full" src={makai} alt="Sarra" />
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">Macai - ETA traking</div>
@@ -68,6 +68,7 @@ export const Project = () => {
                 </Link> 
             </div>
             <div>
+            <div className=" relative">
             <Link to="/page">
                 <div className="overflow-hidden  bg-white-100 xl:mt-10 mt-0">
                     <img className="w-full" src={notebook} alt="Sarra" />
@@ -84,6 +85,7 @@ export const Project = () => {
                     </div>
                 </div>
                 </Link> 
+                </div>
             </div>
         </div>
     )

@@ -28,7 +28,7 @@ export function Makai() {
               <h2 className="font-[Roboto] font-light md:text-[70px] text-[20px]">01.</h2>
               <div>
                 <h3 className="font-[Epilogue] text-[36px]">Goal</h3>
-                <p className="font-[Epilogue]"> Aggiornamento dell'interfaccia di tracciamento della <br /> sezione account dell’<strong>app Macai</strong> attraverso l'inclusione <br /> della  possibilità di notifica in caso di ritardo nella <br /> delivery.</p>
+                <p className="font-[Epilogue]"> Aggiornamento dell'interfaccia di tracciamento della <br /> sezione account dell'<strong>app Macai</strong> attraverso l'inclusione <br /> della  possibilità di notifica in caso di ritardo nella <br /> delivery.</p>
               </div>
             </div>
 
@@ -37,7 +37,7 @@ export function Makai() {
               <h2 className="font-[Roboto] font-light md:text-[70px] text-[20px]">02.</h2>
               <div>
                 <h3 className="font-[Epilogue] text-[36px]">Ui</h3>
-                <p className="font-[Epilogue]"> Realizzazione di un’interfaccia chiara tenendo in <br /> considerazione tutte le possibili casistiche.</p>
+                <p className="font-[Epilogue]"> Realizzazione di un'interfaccia chiara tenendo in <br /> considerazione tutte le possibili casistiche.</p>
               </div>
             </div>
 

@@ -1,4 +1,5 @@
 import Hero from "../sections/Hero";
+import ValentinoText from "../components/ValentinoText";
 import Phone from "../../assets/hero_valentino.png"
 import Section from "../../assets/section.png"
 import Mobile from "../../assets/valentino_mobile.png"
@@ -11,6 +12,8 @@ import Design03 from "../../assets/design_03.png"
 import Design04 from "../../assets/design_04.png"
 import Design05 from "../../assets/design_05.png"
 import Design06 from "../../assets/design_06.png"
+
+
 
 
 export function Valentino() {
@@ -30,73 +33,78 @@ export function Valentino() {
           </p>
         </div>
       </Hero>
+
       <img className="w-full" src={Section} alt="valentino" />
-      <div className="lg:px-[150px] px-[30px] md:h-[760px] h-[600px] bg-[#323232]  content-center">
-        <div className="lg:px-20 px-5 space-y-10 " >
-          <div>
-            <p className="text-white md:text-[16px] text-[12px] font-[Actor] mb-2">HEURISTIC REVIEW & USER BEHAVIOR ANALYSIS <span className="text-[#F52020] text-[18px]">01</span></p>
-            <h3 className="text-white font-base lg:text-[42px] text-[20px] ">I started by analyzing the existing flow to identify <br />  friction points through heuristic evaluation and user <br /> behavior data. </h3>
-          </div>
-          <div>
-            <p className=" text-white md:text-[16px] text-[12px]font-[Actor] mb-2 text-end">MAPPING OF HAPPY PATHS <span className="text-[#F52020] text-[18px]">02</span></p>
-            <h3 className="text-white font-base lg:text-[42px] text-[20px] text-end  "> I mapped out all ideal user flows, identifying the <br />  most common behaviors and optimizing the <br /> structure accordingly for a smoother experience. </h3>
-          </div>
-        </div>
-      </div>
+
+      <ValentinoText
+        titleLeft="HEURISTIC REVIEW & USER BEHAVIOR ANALYSIS"
+        numberLeft="01"
+        textLeft="I started by analyzing the existing flow to identify friction points through heuristic evaluation and user behavior data. "
+        titleRight="MAPPING OF HAPPY PATHS"
+        numberRight="02"
+        textRight="I mapped out all ideal user flows, identifying the
+       most common behaviors and optimizing the
+       structure accordingly for a smoother experience.">
+      </ValentinoText>
+
       <img className="w-full" src={Mobile} alt="valentino" />
 
-      <div className="lg:px-[150px] px-[30px] md:h-[760px] h-[400px]  bg-[#323232]  content-center">
-        <div className="lg:px-20 px-5space-y-10 " >
-          <div>
-            <p className=" text-white md:text-[16px] text-[12px] font-[Actor] mb-2">REDESIGN WITH EDGE & MASTER CASES <span className="text-[#F52020] text-[18px]">03</span></p>
-            <h3 className="text-white font-base lg:text-[42px] text-[20px] font-[Actor] "> All flows were redesigned taking into account edge <br /> cases and master cases to ensure a robust,<br />complete experience across all user scenarios.</h3>
-          </div>
-        </div>
-      </div>
+      <ValentinoText
+        titleLeft="REDESIGN WITH EDGE & MASTER CASES"
+        numberLeft="03"
+        textLeft="All flows were redesigned taking into account edge cases and master cases to ensure a robust,complete experience across all user scenarios. ">
+      </ValentinoText>
 
-      <div className="bg-[#323232] grid lg:grid-cols-4 grid-cols-1 gap-4 px-20 lg:p-0">
+      <div className="bg-[#323232] grid lg:grid-cols-4 grid-cols-1 px-20 lg:p-0 gap-5">
         <div className="lg:col-start-1 ">
-          <img className="lg:pt-20 pt-0" src={Design00} alt="" />
+          <img className="lg:pt-20 pt-0" src={Design00} alt="redesign" />
         </div>
         <div className="lg:col-start-2 col-start-1">
-          <img src={Design01} alt="" />
+          <img src={Design01} alt="redesign" />
         </div>
         <div className="lg:col-start-3 col-start-1">
-          <img className="lg:pt-20 pt-0" src={Design04} alt="" />
+          <img className="lg:pt-20 pt-0" src={Design04} alt="redesign" />
         </div>
         <div className="lg:col-start-4 col-start-1">
-          <img src={Design05} alt="" />
+          <img src={Design05} alt="redesign" />
         </div>
         <div className="lg:col-start-2 col-start-1">
-          <img src={Design03} alt="" />
+          <img src={Design03} alt="redesign" />
         </div>
         <div className="lg:col-start-4 col-start-1">
-          <img src={Design06} alt="" />
+          <img src={Design06} alt="redesign" />
         </div>
       </div>
 
 
-      <div className="lg:px-[150px] px-[30px] md:h-[760px] h-[600px] bg-[#323232]  content-center">
-        <div className="lg:px-20 px-5 space-y-10 " >
-          <div>
-            <p className=" text-white md:text-[16px] text-[12px] mb-2 font-[Actor]">WIREFRAMING & USER FLOW OPTIMIZATION <span className="text-[#F52020] text-[18px]">04</span></p>
-            <h3 className="text-white font-base lg:text-[42px] text-[20px] font-[Actor] "> I restructured the checkout process and created<br /> low-fidelity wireframes to test and validate the new <br />architecture early on.</h3>
-          </div>
-          <div>
-            <p className=" text-white md:text-[16px] text-[12px] mb-2 text-end font-[Actor]">MOCKUPS FOR MOBILE AND DESKTOP <span className="text-[#F52020] text-[18px]">05</span></p>
-            <h3 className="text-white font-base lg:text-[42px] text-end  text-[20px] font-[Actor]"> I designed high-fidelity mockups for both mobile<br /> and desktop using a mobile-first approach to<br /> ensure responsiveness and development efficiency. </h3>
-          </div>
-        </div>
-      </div>
+      <ValentinoText
+        titleLeft="WIREFRAMING & USER FLOW OPTIMIZATION"
+        numberLeft="04"
+        textLeft="I restructured the checkout process and created low-fidelity wireframes to test and validate the new architecture early on. "
+        titleRight="MOCKUPS FOR MOBILE AND DESKTOP"
+        numberRight="05"
+        textRight="I designed high-fidelity mockups for both mobile and desktop using a mobile-first approach to ensure responsiveness and development efficiency.">
+      </ValentinoText>
+
+
 
       <div className="bg-[#03140F] grid lg:grid-cols-4 grid-cols-1 items-center gap-4  pt-10 lg:px-[150px] px-[30px] py-10">
         <div class="col-start-1">
-          <img src={Mobile00} alt="" />
+          <img src={Mobile00} alt="Mockups" />
         </div>
         <div class="lg:col-start-4 col-start-1">
-          <img src={Mobile01} alt="" />
+          <img src={Mobile01} alt="Mockups" />
         </div>
       </div>
+
+      <ValentinoText
+        titleLeft="INTERACTIVE PROTOTYPING & TESTING"
+        numberLeft="06"
+        textLeft="I built an interactive prototype and conducted usability testing to collect feedback and iterate on key elements. "
+        titleRight="UI REDESIGN IMPLEMENTATION"
+        numberRight="07"
+        textRight="After finalizing the redesign, the new checkout UI was implemented across all devices, improving both aesthetics and usability. ">
+      </ValentinoText>
 
       <div className="lg:px-[150px] px-[30px] md:h-[760px] h-[600px] bg-[#323232]  content-center">
         <div className="lg:px-20 px-5 space-y-10 " >

@@ -8,14 +8,14 @@ import CortiliaMockup04 from "../../assets/cortilia_mobile_mockup_04.png"
 import CortiliaMockup05 from "../../assets/cortilia_mobile_mockup_05.png"
 
 
-export function CortiliaPage() {
+export function CortiliaPdp() {
   return (
     <>
       <Hero
         imgUrl={Notebook}
         imgAlt="foto profilo">
         <div className="md:space-y-10 space-y-4 ">
-          <h1 className="text-2xl md:text-6xl font-bold">Cortilia - New  </h1>
+          <h1 className="text-2xl md:text-6xl font-bold">Cortilia - PDP </h1>
           <h1 className="text-2xl md:text-6xl font-bold">Product Detail</h1>
           <h1 className="text-2xl md:text-6xl font-bold">Page</h1>
           <p>
@@ -27,7 +27,7 @@ export function CortiliaPage() {
       </Hero>
 
 
-
+<div>
       <div className="lg:px-[130px] px-[30px]">
         <div className="flex items-center justify-between">
           <div>
@@ -100,8 +100,9 @@ export function CortiliaPage() {
             <img src={CortiliaMockup04} alt="cortilia" />
           </div>
         </div>
+        </div>
 
-        <img src={CortiliaMockup05} alt="cortilia" />
+        <img className="w-full" src={CortiliaMockup05} alt="cortilia" />
 
       </div>
     </>

@@ -62,13 +62,13 @@ const Navbar = () => {
               {isOpen && (
                 <div className=" text-white text-xl text-center flex flex-col space-y-5  ">
                   <button onClick={() => (setIsMenuOpen(!isMenuOpen))} className="block px-4 py-2 hover:text-white">
-                    <Link to="/valentino">VLTN - Checkout</Link></button>
+                    <Link onClick={() => setIsOpen((prev) => !prev)} to="/valentino">VLTN - Checkout</Link></button>
                   <button onClick={() => (setIsMenuOpen(!isMenuOpen))} className=" text-white">
-                    <Link to="/page">Cortilia - New app</Link></button>
+                    <Link onClick={() => setIsOpen((prev) => !prev)} to="/page">Cortilia - PDP</Link></button>
                   <button onClick={() => (setIsMenuOpen(!isMenuOpen))} className="block px-4 py-2 text-white">
-                    <Link to="/cortilia">Cortilia - PDP</Link></button>
+                    <Link onClick={() => setIsOpen((prev) => !prev)} to="/cortilia">Cortilia - New app</Link></button>
                   <button onClick={() => (setIsMenuOpen(!isMenuOpen))} className="block px-4 py-2 text-white">
-                    <Link to="/makai">Macai - ETA</Link></button>
+                    <Link onClick={() => setIsOpen((prev) => !prev)} to="/makai">Macai - ETA</Link></button>
                 </div>
 
               )}

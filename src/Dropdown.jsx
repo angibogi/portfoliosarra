@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import { Link } from "react-router-dom"
 
 const Dropdown = () => {
+    const dropdownstyle = "block text-left px-4 py-2 hover:bg-[#DFE1E6] w-full"
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
 
@@ -28,14 +29,15 @@ const Dropdown = () => {
 
             {isOpen && (
                 <div className="mt-2 bg-white py-2 z-50 rounded-lg absolute">
-                    <button className="block px-4 py-2 ">
-                        <Link onClick={() => (setIsMenuOpen(!isMenuOpen ))} to="/valentino">VLTN - Checkout</Link></button>
-                    <button onClick={() => (setIsMenuOpen(!isMenuOpen))} className="block px-4 py-2 ">
-                        <Link onClick={() => (setIsMenuOpen(!isMenuOpen))} to="/page">Cortilia - New app</Link></button>
-                    <button onClick={() => (setIsMenuOpen(!isMenuOpen))} className="block px-4 py-2 ">
-                        <Link to="/cortilia">Cortilia - PDP</Link></button>
-                    <button onClick={() => (setIsMenuOpen(!isMenuOpen))} className="block px-4 py-2">
-                        <Link to="/makai">Macai - ETA</Link></button>
+                    <button className={dropdownstyle}>
+                        <Link onClick={() => setIsOpen((prev) => !prev)} to="/makai">Macai - ETA</Link></button>
+                    <button className={dropdownstyle}>
+                        <Link onClick={() => setIsOpen((prev) => !prev)} to="/valentino">VLTN - Checkout</Link></button>
+                    <button className={dropdownstyle}>
+                        <Link onClick={() => setIsOpen((prev) => !prev)} to="/page">Cortilia - PDP</Link></button>
+                    <button className={dropdownstyle}>
+                        <Link onClick={() => setIsOpen((prev) => !prev)} to="/cortilia">Cortilia - New app</Link></button>
+
                 </div>
 
             )}

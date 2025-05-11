@@ -51,7 +51,7 @@ export const Project = () => {
             </div>
             <div className=" relative">
             <Link to="/makai">
-                <div className="overflow-hidden bg-white-100 lg:mt-20 md:mt-10 mt-0 relative  xl:top-100 lg:top-35 ">
+                <div className="overflow-hidden bg-white-100 lg:mt-20 md:mt-10 mt-0 relative  xl:top-170 lg:top-35 ">
                     <img className="w-full" src={makai} alt="Sarra" />
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">Macai - ETA traking</div>

@@ -15,9 +15,7 @@ export function CortiliaPdp() {
         imgUrl={Notebook}
         imgAlt="foto profilo">
         <div className="md:space-y-10 space-y-4 ">
-          <h1 className="text-2xl md:text-6xl font-bold">Cortilia - PDP </h1>
-          <h1 className="text-2xl md:text-6xl font-bold">Product Detail</h1>
-          <h1 className="text-2xl md:text-6xl font-bold">Page</h1>
+        <h1 className="text-2xl xl:text-6xl font-bold leading-10 xl:leading-20"> Cortilia - PDP Product Detail Page </h1>
           <p>
             I redesigned the Product Detail Page (PDP) for both the Cortilia app and website to enhance usability and visual hierarchy.
             By refining the layout, improving call-to-action placement, and optimizing information architecture, I created a more seamless and engaging shopping experience.

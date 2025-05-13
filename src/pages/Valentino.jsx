@@ -13,9 +13,6 @@ import Design04 from "../../assets/design_04.png"
 import Design05 from "../../assets/design_05.png"
 import Design06 from "../../assets/design_06.png"
 
-
-
-
 export function Valentino() {
   return (
     <>
@@ -23,11 +20,9 @@ export function Valentino() {
         imgUrl={Phone}
         imgAlt="foto profilo">
         <div className="md:space-y-10 space-y-4 ">
-          <h1 className="text-2xl md:text-6xl font-bold"> Valentino – </h1>
-          <h1 className="text-2xl md:text-6xl font-bold ">Website Checkout </h1>
-          <h1 className="text-2xl md:text-6xl font-bold">Redesign </h1>
+        <h1 className="text-2xl xl:text-6xl font-bold leading-10 xl:leading-20"> Valentino Website Checkout Redesign</h1>
           <p>
-            I redesigned the website checkout flow to improve usability and align with Valentino’s luxury brand identity.
+            I redesigned the website checkout flow to improve usability and align with Valentino's luxury brand identity.
             Through UX research, I simplified the user journey, reduced friction points, and enhanced clarity.
             On the UI side, I refined the visual hierarchy, optimized input fields, and created a clean, elegant interface for a smoother, more premium checkout experience.
           </p>
@@ -106,18 +101,6 @@ export function Valentino() {
         textRight="After finalizing the redesign, the new checkout UI was implemented across all devices, improving both aesthetics and usability. ">
       </ValentinoText>
 
-      <div className="lg:px-[150px] px-[30px] md:h-[760px] h-[600px] bg-[#323232]  content-center">
-        <div className="lg:px-20 px-5 space-y-10 " >
-          <div>
-            <p className=" text-white md:text-[16px] text-[12px] mb-2 font-[Actor]">INTERACTIVE PROTOTYPING & TESTING <span className="text-[#F52020] text-[18px]">06</span></p>
-            <h3 className="text-white font-base lg:text-[42px] text-[20px] font-[Actor] "> I built an interactive prototype and conducted <br /> usability testing to collect feedback and iterate on<br />key elements.</h3>
-          </div>
-          <div>
-            <p className=" text-white md:text-[16px] text-[12px] mb-2 text-end">UI REDESIGN IMPLEMENTATION <span className="text-[#F52020] text-[18px]">07</span></p>
-            <h3 className="text-white font-base lg:text-[42px] text-[20px] text-end  font-[Actor] "> After finalizing the redesign, the new checkout UI <br /> was implemented across all devices, improving both <br /> aesthetics and usability. </h3>
-          </div>
-        </div>
-      </div>
       <img className="w-full" src={Notebook} alt="valentino" />
     </>
   )

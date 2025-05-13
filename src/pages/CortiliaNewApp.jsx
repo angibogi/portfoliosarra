@@ -5,6 +5,8 @@ import highFidelity from "../../assets/high_fidelity.png"
 import clock from "../../assets/clock.png"
 import User00 from "../../assets/user_test_00.png"
 import User01 from "../../assets/user_test_01.png"
+import User02 from "../../assets/user_test_02.png"
+import User03 from "../../assets/user_test_03.png"
 import User04 from "../../assets/user_test_04.png"
 import User05 from "../../assets/user_test_05.png"
 import User06 from "../../assets/user_test_06.png"
@@ -185,13 +187,13 @@ export function CortiliaNewApp() {
 
         <h3 className="text-[#E6FFF7] font-semibold text-[22px] font-[Poppins] mt-20"> User test: Risultati</h3>
         <div>
-          <div className="bg-white border rounded p-10 h-[177px] mt-5 ">
+          <div className="bg-white border rounded p-10 h-[177px] my-5 ">
             <h4 className="font-extrabold">Carrello:</h4>
             <p>SVUOTA risulta essere poco visibile e logicamente scollegato allo scontrino → redesign ✔️</p>
           </div>
-          <div className="grid lg:grid-cols-2 grid-cols-1 ">
-            <img className="mt-2" src={User06} alt="" />
-            <img className="mt-2" src={User07} alt="" />
+          <div className="grid lg:grid-cols-2 grid-cols-1">
+            <img className="mt-2 md:p-20 p-0  " src={User02} alt="After" />
+            <img className="mt-2 md:p-20 p-0 " src={User03} alt="Before" />
           </div>
         </div>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 justify-center m-auto mt-20 ">
@@ -211,9 +213,9 @@ export function CortiliaNewApp() {
             <h2 className="text-[28px]  py-2 px-10 text-center font-[Fira Sans] font-bold bg-white text-[#006747] m-auto">COACHMARK HOMEPAGE </h2>
             <p className="mt-2 font-bold text-[18px] text-white text-center">Da mostrare la prima volta che si atterra su HP (quindi al primo accesso in app)
               Quando loggato mostra prima questo e poi navbar</p>
-            <div className="grid lg:grid-cols-2 grid-cols-1 ">
-              <img className="mt-2" src={User06} alt="" />
-              <img className="mt-2" src={User07} alt="" />
+            <div className="grid grid-cols-2 ">
+              <img className="mt-2  w-60" src={User06} alt="COACHMARK" />
+              <img className="mt-2  w-60" src={User07} alt="COACHMARK" />
             </div>
           </div>
         </div>

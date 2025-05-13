@@ -18,7 +18,7 @@ const Footer = () => {
             <li><a href={CV} target="_blank">Curriculum Vitae</a></li>
           </ul>
         </div>
-        <p className="mt-20">Not Copyright 2025 • Sarra Slimane</p>
+        <p className="mt-20">Copyright 2025 • Angelo Pisano</p>
       </div>
     </div>
   )

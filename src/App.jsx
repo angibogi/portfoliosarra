@@ -6,8 +6,8 @@ import { CortiliaNewApp } from "./pages/CortiliaNewApp";
 import { CortiliaPdp } from "./pages/CortiliaPdp";
 import Navbar from "./sections/Navbar";
 import Footer from "./sections/Footer";
-import ScrollToTop from "./ScrollToTop"; 
-import ScrollToAnchor from "./ScrollToAnchor";
+import ScrollToTop from "./components/ScrollToTop"; 
+import ScrollToAnchor from "./components/ScrollToAnchor";
 
 const App = () => {
   return (

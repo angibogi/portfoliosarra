@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Logo from "../../assets/logo.svg"
 import { Link } from "react-router-dom"
 import Negativo from "../../assets/logo_negativo.svg"
-import Dropdown from "../Dropdown";
+import Dropdown from "../components/Dropdown";
 
 const Navbar = () => {
 

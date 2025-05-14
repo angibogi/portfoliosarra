@@ -5,6 +5,8 @@ import Project from "../sections/Project";
 import Contact from "../sections/Contact";
 import Sarra from "../../assets/sarra.png"
 
+
+
 export function Home() {
   return (
     <>

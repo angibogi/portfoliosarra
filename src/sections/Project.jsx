@@ -56,7 +56,7 @@ export const Project = () => {
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">Macai - ETA traking</div>
                         <p className="text-[#8491A0] text-base mb-8">
-                            I redesigned the ETA tracking feature in the Makai app to improve clarity and usability.
+                            I redesigned the ETA tracking feature in the Macai app to improve clarity and usability.
                         </p>
                     </div>
                     <div className="relative">

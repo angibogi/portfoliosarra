@@ -13,7 +13,7 @@ export function Makai() {
         <div className="md:space-y-10 space-y-4 ">
         <h1 className="text-2xl xl:text-6xl font-bold leading-10 xl:leading-20"> Macai - ETA traking</h1>
           <p>
-            I redesigned the ETA tracking feature in the Makai app to improve clarity and usability.
+            I redesigned the ETA tracking feature in the Macai app to improve clarity and usability.
             By simplifying the layout, refining the information hierarchy,
             and improving visual cues, I made the user experience more intuitive and easier to follow in real time.
           </p>

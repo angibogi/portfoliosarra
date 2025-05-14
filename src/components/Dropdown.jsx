@@ -30,14 +30,13 @@ const Dropdown = () => {
             {isOpen && (
                 <div className="mt-2 bg-white py-2 z-50 rounded-lg absolute">
                     <button className={dropdownstyle}>
-                        <Link onClick={() => setIsOpen((prev) => !prev)} to="/makai">Macai - ETA</Link></button>
-                    <button className={dropdownstyle}>
                         <Link onClick={() => setIsOpen((prev) => !prev)} to="/valentino">VLTN - Checkout</Link></button>
                     <button className={dropdownstyle}>
                         <Link onClick={() => setIsOpen((prev) => !prev)} to="/page">Cortilia - PDP</Link></button>
                     <button className={dropdownstyle}>
                         <Link onClick={() => setIsOpen((prev) => !prev)} to="/cortilia">Cortilia - New app</Link></button>
-
+                    <button className={dropdownstyle}>
+                        <Link onClick={() => setIsOpen((prev) => !prev)} to="/makai">Macai - ETA</Link></button>
                 </div>
 
             )}

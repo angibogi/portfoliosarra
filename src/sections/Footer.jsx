@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from "../../assets/logo_negativo.svg"
 import { Link } from "react-router-dom"
-import CV from "../../assets/CvSarraSlimane.pdf"
+import CV from "../../assets/Cv Sarra Slimane.pdf"
 
 const Footer = () => {
   return (

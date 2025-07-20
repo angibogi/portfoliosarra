@@ -3,6 +3,19 @@ import Icona0 from "../../assets/skillset_00.svg"
 import Icona1 from "../../assets/skillset_01.svg"
 import Icona2 from "../../assets/skillset_02.svg"
 import Icona3 from "../../assets/skillset_03.svg"
+import { motion } from "motion/react"
+
+
+
+  const animate ={
+    scale: 1, 
+    opacity:100,
+}
+
+const initial ={
+    scale: 0.5,
+    opacity:0
+}
 
 const Skillset = () => {
     return (
@@ -16,7 +29,7 @@ const Skillset = () => {
             </div>
 
             <div className="lg:w-[80%] w-full grid lg:grid-cols-2 grid-cols-1 justify-center items-start lg:gap-20 gap-12">
-                <div className="flex flex-col justify-center items-start gap-6">
+                <motion.div initial={initial}  whileInView={animate} viewport={{once: true,}}   transition={{duration: 1, delay: 0.3, ease: [0, 0.71, 0.2, 1.01]}}  className="flex flex-col justify-center items-start gap-6">
                     <div>
                         <img className="size-9 mb-2 " src={Icona0} alt="Sarra" />
                         <div className="flex flex-col justify-center items-start gap-3">
@@ -28,8 +41,8 @@ const Skillset = () => {
                     </div>
 
 
-                </div>
-                <div className="flex flex-col justify-center items-start gap-6">
+                </motion.div>
+                <motion.div initial={initial}  whileInView={animate} viewport={{once: true,}}   transition={{duration: 1, delay: 0.5, ease: [0, 0.71, 0.2, 1.01]}} className="flex flex-col justify-center items-start gap-6">
                     <div>
                         <img className="size-9 mb-2" src={Icona1} alt="Sarra" />
                         <div className="flex flex-col justify-center items-start gap-3">
@@ -37,8 +50,8 @@ const Skillset = () => {
                             <p className="text-[#8491A0] text-[16px]"> Experienced in translating ideas into clear wireframes and interactive prototypes using tools like Figma and Sketch to validate design concepts early in the process.</p>
                         </div>
                     </div>
-                </div>
-                <div className="flex flex-col justify-center items-start gap-6">
+                </motion.div>
+                <motion.div initial={initial}  whileInView={animate} viewport={{once: true,}}   transition={{duration: 1, delay: 0.7, ease: [0, 0.71, 0.2, 1.01]}} className="flex flex-col justify-center items-start gap-6">
                     <div>
                         <img className="size-9 mb-2" src={Icona2} alt="Sarra" />
                         <div className="flex flex-col justify-center items-start gap-3">
@@ -47,8 +60,8 @@ const Skillset = () => {
                                 with the ability to develop and maintain scalable design systems that align with brand identity and enhance usability.</p>
                         </div>
                     </div>
-                </div>
-                <div className="flex flex-col justify-center items-start gap-6">
+                </motion.div>
+                <motion.div initial={initial}  whileInView={animate} viewport={{once: true,}}  transition={{duration: 1, delay: 0.9, ease: [0, 0.71, 0.2, 1.01]}} className="flex flex-col justify-center items-start gap-6">
                     <div>
                         <img className="size-9 mb-2" src={Icona3} alt="Sarra" />
                         <div className="flex flex-col justify-center items-start gap-3">
@@ -57,7 +70,7 @@ const Skillset = () => {
                                 developers, and content teams to ensure a smooth and agile design process.</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

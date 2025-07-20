@@ -3,6 +3,7 @@ import Logo from "../../assets/logo.svg"
 import { Link } from "react-router-dom"
 import Negativo from "../../assets/logo_negativo.svg"
 import Dropdown from "../components/Dropdown";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const Navbar = () => {
 

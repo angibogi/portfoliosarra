@@ -4,6 +4,17 @@ import makai from "../../assets/makai.png"
 import notebook from "../../assets/notebook.png"
 import valentino from "../../assets/valentino.png"
 import { Link } from "react-router-dom"
+import { motion } from "motion/react"
+
+const animate ={
+    scale: 1,
+    opacity:100,
+}
+
+const initial ={
+    scale: 0.5,
+    opacity:0,
+}
 
 export const Project = () => {
     return (
@@ -15,7 +26,7 @@ export const Project = () => {
 
             <div className=" relative">
             <Link to="/cortilia">
-                <div className=" overflow-hidden bg-white-100 xl:absolute relative z-10">
+                < motion.div initial={initial}  whileInView={animate} viewport={{once: true,}} transition={{duration: 3, delay: 0.8, ease: [0, 0.71, 0.2, 1.01]}} className=" overflow-hidden bg-white-100 xl:absolute relative z-10">
                     <img className="w-full" src={cortilia} alt="Sarra" />
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">Cortilia - New App</div>
@@ -28,12 +39,12 @@ export const Project = () => {
                         ⬈
                         </span>
                     </div>
-                </div>
+                </motion.div>
                 </Link>
             </div>
             <div className="relative ">
                   <Link to="/valentino">
-                <div className="overflow-hidden bg-white-100 ">
+                <motion.div initial={initial}  whileInView={animate} viewport={{once: true,}}   transition={{duration: 1, delay: 0.6, ease: [0, 0.71, 0.2, 1.01]}}  className="overflow-hidden bg-white-100 ">
                     <img className="w-full" src={valentino} alt="Sarra" />
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">Valentino – Website Checkout Redesign</div>
@@ -46,12 +57,12 @@ export const Project = () => {
                         ⬈
                         </span>
                     </div>
-                </div>
+                </motion.div>
                 </Link>
             </div>
             <div className=" relative">
             <Link to="/makai">
-                <div className="overflow-hidden bg-white-100 lg:mt-20 md:mt-10 mt-0 relative  xl:top-170 lg:top-35 ">
+                <motion.div initial={initial}  whileInView={animate} viewport={{once: true,}}   transition={{duration: 1, delay: 0.4, ease: [0, 0.71, 0.2, 1.01]}}  className="overflow-hidden bg-white-100 lg:mt-20 md:mt-10 mt-0 relative  xl:top-170 lg:top-35 ">
                     <img className="w-full" src={makai} alt="Sarra" />
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">Macai - ETA traking</div>
@@ -64,13 +75,13 @@ export const Project = () => {
                         ⬈
                         </span>
                     </div>
-                </div>
+                </motion.div>
                 </Link> 
             </div>
             <div>
             <div className=" relative">
             <Link to="/page">
-                <div className="overflow-hidden  bg-white-100 xl:mt-10 mt-0">
+                <motion.div initial={initial}  whileInView={animate} viewport={{once: true,}}   transition={{duration: 1, delay: 1, ease: [0, 0.71, 0.2, 1.01]}}  className="overflow-hidden  bg-white-100 xl:mt-10 mt-0">
                     <img className="w-full" src={notebook} alt="Sarra" />
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">Cortilia - New Product Detail Page</div>
@@ -83,7 +94,7 @@ export const Project = () => {
                         ⬈
                         </span>
                     </div>
-                </div>
+                </motion.div>
                 </Link> 
                 </div>
             </div>

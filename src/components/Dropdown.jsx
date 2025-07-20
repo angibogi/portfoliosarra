@@ -1,8 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Link } from "react-router-dom"
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const Dropdown = () => {
-    const dropdownstyle = "block text-left px-4 py-2 hover:bg-[#DFE1E6] w-full"
+    const dropdownstyle = "block text-left px-4 py-2 hover:bg-[#659238] w-full"
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
 
@@ -24,7 +25,7 @@ const Dropdown = () => {
             <button
                 onClick={() => setIsOpen((prev) => !prev)}
                 className=" duration-200 cursor-pointer w-full flex">
-                Project
+               Project
             </button>
 
             {isOpen && (

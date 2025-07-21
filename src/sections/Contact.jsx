@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useRef} from 'react';
 import emailjs from "@emailjs/browser";
 
+
+const contact = () => {
+    const form = useRef();
 const sendEmail = (e) => {
     e.preventDefault();
 
@@ -17,8 +20,6 @@ const sendEmail = (e) => {
         },
       );
   };
-
-const contact = () => {
   return (
     <div id="contact" className="w-full md:my-10 my-20 h-[731px] pt-20 lg:px-[150px] px-[30px] grid lg:grid-cols-2 grid-cols-1 gap-0  lg:gap-4">
       <div>
@@ -45,9 +46,8 @@ const contact = () => {
           <textarea  className="bg-white-100 py-2 px-4 w-full resize-none h-50" name="message" />
         </div>
         <div >
-          <button className=" bg-[#659238] text-white font-bold py-2 px-4 w-full" type="button">
-            LET'S GET STARTED
-          </button>
+          <input className=" bg-[#659238] text-white font-bold py-2 px-4 w-full" type="submit" value=" LET'S GET STARTED"/>
+      
         </div>
       </form>
     </div>

@@ -24,7 +24,7 @@ const experience = () => {
         <div>
         <motion.div initial={initial}  whileInView={animate} viewport={{once: true,}}    transition={{duration: 1, delay: 0.3, ease: [0, 0.71, 0.2, 1.01]}} className="flex flex-col justify-center items-start gap-3">
             <p  className="text-[#8491A0] lg:text-[117px] text-[50px]">01</p>
-            <h3  className="text-white font-semibold text-[22px]"> <span  className="text-[#FF0000]">Valentino</span> , UI UX Designer Specialist</h3>
+            <h3  className="text-white font-semibold text-[22px]"> <span  className="text-[#FF0000]">Valentino</span> , UX/UI Designer Specialist (Mid Senior)</h3>
             <p  className="text-white text-[16px]">
             I currently am the Ui UX designer on the service design team for Valentino S.p.a.
             </p>
@@ -38,7 +38,7 @@ const experience = () => {
         <motion.div  initial={initial}  whileInView={animate} viewport={{once: true,}}  transition={{duration: 1, delay: 0.4, ease: [0, 0.71, 0.2, 1.01]}}
          className="flex flex-col justify-center items-start gap-3">
         <p  className="text-[#8491A0] lg:text-[117px] text-[50px]">02</p>
-            <h3  className="text-white font-semibold text-[22px]"> <span  className="text-[#5D6753]">Cortilia</span >, Junior Product Designer</h3>
+            <h3  className="text-white font-semibold text-[22px]"> <span  className="text-[#5D6753]">Cortilia</span >, Product Designer (UX/UI)</h3>
             <p  className="text-white text-[16px]"> I worked as a Junior Product Designer at Cortilia, contributing to both the app and the website.</p>
         </motion.div>
         </div>
@@ -47,7 +47,7 @@ const experience = () => {
         <div>
         <motion.div initial={initial}  whileInView={animate} viewport={{once: true,}}  transition={{duration: 1, delay: 0.5, ease: [0, 0.71, 0.2, 1.01]}} className="flex flex-col justify-center items-start gap-3">
         <p className="text-[#8491A0]  lg:text-[117px] text-[50px]">03</p>
-            <h3  className="text-white font-semibold text-[22px]"><span  className="text-[#F7931E]">Macai</span >, Junior Ui Ux Designer</h3>
+            <h3  className="text-white font-semibold text-[22px]"><span  className="text-[#F7931E]">Macai</span >, Junior UX/UI Designer</h3>
             <p  className="text-white text-[16px]">I worked as a Junior Product Designer at Macai, a small startup where I embraced their modern and youthful design approach.</p>
         </motion.div>
         </div>

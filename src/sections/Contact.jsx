@@ -31,19 +31,19 @@ const sendEmail = (e) => {
           <label className="block text-white text-sm font-bold mb-2">
             Nome
           </label>
-          <input className="bg-white-100 py-2 px-4 w-full" name="name" />
+          <input className="bg-white-100 py-2 px-4 w-full" type="text" name="name" />
         </div>
         <div className="mb-6">
           <label className="block text-white text-sm font-bold mb-2">
             E-mail
           </label>
-          <input className="bg-white-100 py-2 px-4 w-full" name="email" />
+          <input className="bg-white-100 py-2 px-4 w-full" type="email" name="email" />
         </div>
         <div className="mb-10">
           <label className="block text-white text-sm font-bold mb-2">
            Message
           </label>
-          <textarea  className="bg-white-100 py-2 px-4 w-full resize-none h-50" name="message" />
+          <textarea  className="bg-white-100 py-2 px-4 w-full resize-none h-50" type="text" name="message" />
         </div>
         <div >
           <input className=" bg-[#659238] text-white font-bold py-2 px-4 w-full" type="submit" value=" LET'S GET STARTED"/>
